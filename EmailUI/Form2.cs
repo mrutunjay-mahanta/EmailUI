@@ -99,12 +99,14 @@ namespace EmailUI
             btnBrowse.Text = "Browse";
             btnBrowse.Location = new Point(150, 260);
             btnBrowse.Size = new Size(120, 30);
+            btnBrowse.Click += BtnBrowse_Click;
             this.Controls.Add(btnBrowse);
 
             Button btnSend = new Button();
             btnSend.Text = "Send Email";
             btnSend.Location = new Point(300, 260);
             btnSend.Size = new Size(300, 30);
+            btnSend.Click += BtnSend_Click;
             this.Controls.Add(btnSend);
 
 
@@ -116,12 +118,22 @@ namespace EmailUI
             TextBox tb7 = new TextBox();
             tb7.Multiline = true;
             tb7.Size = new Size(300, 180);
-            tb7.Location = new Point(300, 70);
+            tb7.Location = new Point(300, 78);
             this.Controls.Add(tb7);
 
 
 
             this.Controls.Add(p);
+        }
+
+        private void BtnSend_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void BtnBrowse_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
         }
     }
 }
